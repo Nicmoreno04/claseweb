@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoja de Vida</title>
+    <link rel="stylesheet" href="hojadevida.css">
+    <script>
+        function showPage(pageNumber) {
+            const pages = document.querySelectorAll('.page-content');
+            pages.forEach((page, index) => {
+                if (index === pageNumber - 1) {
+                    page.style.display = 'block';
+                } else {
+                    page.style.display = 'none';
+                }
+            });
+        }
+
+        window.onload = function() {
+            showPage(1);  // Muestra la primera página al cargar
+        };
+    </script>
+</head>
+<body>
+    <div class="page">
+        <div class="header">
+            <h1>NICOLAS MORENO ACOSTA</h1>
+            <img src="imagen.jpg" alt="Foto de Perfil" class="profile-img">
+        </div>
+
+        <!-- Navegación -->
+        <nav>
+            <ul>
+                <li><a href="javascript:showPage(1)">Información Personal</a></li>
+                <li><a href="javascript:showPage(2)">Experiencia Laboral y Educación</a></li>
+                <li><a href="javascript:showPage(3)">Referencias</a></li>
+            </ul>
+        </nav>
+
+        <!-- Página 1 -->
+        <div class="page-content" id="page1">
+            <section>
+                <h2>Información Personal</h2>
+                <p><strong>Email:</strong> nicolas@gmail.com</p>
+                <p><strong>Teléfono:</strong> 3105310588</p>
+                <p><strong>Dirección:</strong> Cra72j#42-35sur</p>
+            </section>
+            <section>
+                <h2>Perfil laboral</h2>
+                <p>Responsable, creativo, recursivo, dinámico, con buen manejo de expresión verbal y liderazgo. Soy una persona con carácter en la toma de decisiones, con iniciativa y buen manejo de relaciones interpersonales, abierto y comunicativo en su trato, tengo facilidad para trabajar en equipo y bajo presión, con alta capacidad análisis y resolución de problemas, y me caracterizo por mi ética y respeto.
+                    Poseo conocimientos de Networking y Cybersecurity también construcción de circuitos digitales, electrónicos, industriales y residenciales, así mismo conocimiento de los lenguajes de programación Python, C++, C#, HTML, CSS y Java Script, con conocimientos básicos en bases de datos en SQL, MySQL.</p>
+            </section>
+        </div>
+
+        <!-- Página 2 -->
+        <div class="page-content" id="page2">
+            <section>
+                <h2>Experiencia Laboral</h2>
+                <p><strong>Vendedor:</strong> Ortopédicos traumaser</p>
+                <p><strong>Funciones:</strong> Comprender las necesidades específicas de los clientes en términos de dispositivos
+                    ortopédicos y productos de salud, ofreciendo asesoramiento para encontrar soluciones que
+                    mejoren la movilidad, la comodidad y la calidad de vida de los clientes. Esto implica no solo la
+                    presentación de productos, sino también el conocimiento detallado de las condiciones médicas,
+                    la recomendación de productos adecuados y el apoyo continuo para asegurar la selección y el
+                    uso óptimos de los dispositivos ortopédicos.</p>
+                <p><strong>Fecha:</strong> Diciembre 2022 – Actualmente </p>
+            </section>
+
+            <section>
+                <h2>Educación</h2>
+                <p><strong>Ingenieria de sistemas</strong> - Universidad libre</p>
+                <p>6to Semestre Actualmente</p>
+                <p><strong>Técnico en electricidad y electrónica</strong> - Instituto Técnico Industrial Centro Don Bosco</p>
+                <p>Graduado con una sólida formación en instalación, mantenimiento y reparación de sistemas eléctricos y electrónicos. Capacitado en el uso de herramientas especializadas y en la interpretación de planos eléctricos, con un enfoque en la solución de problemas y la eficiencia en el trabajo técnico, Bogotá 2021.</p>
+                <p><strong>Certificación Curso Networking Essentials</strong> - Cisco Networking Academy</p>
+                <p>Certificado en fundamentos de redes, con conocimientos clave en configuración, administración y solución de problemas en redes. Capacitado en el uso de herramientas y tecnologías esenciales para la creación y mantenimiento de infraestructuras de red seguras y eficientes, Bogotá 2021.</p>
+                <p><strong>Certificación Curso Cybersecurity Essentials</strong> - Cisco Networking Academy</p>
+                <p>Certificado en los fundamentos de ciberseguridad, con habilidades en la identificación de amenazas, protección de sistemas, y gestión de riesgos. Formado en las mejores prácticas para asegurar redes y datos, con un enfoque en la prevención y respuesta a ciberataques, Bogotá 2021.</p>
+            </section>
+        </div>
+
+        <!-- Página 3 -->
+        <div class="page-content" id="page3">
+            <section>
+                <h2>Referencias</h2>
+                <p><strong>Camilo Ernesto Moreno Gómez</strong></p>
+                <p>Casa Científica – Ingeniero Químico de Servicios</p>
+                <p>Tel: (1) 312 6310 / 312 6304 – 316 4720061</p>
+                <p><strong>Carolina Ortiz Carrillo</strong></p>
+                <p>Organización Terpel – Analista de Cartera</p>
+                <p>Tel: (1) 3267878 ext. 1391 – 321 3697003</p>
+            </section>
+        </div>
+    </div>
+</body>
+</html>
